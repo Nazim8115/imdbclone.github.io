@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b52e76a410.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>IMDB</title>
+  </head>
+
+  <body>
+    <!-- navbar html code  -->
+    <nav id="navbar">
+      <div id="logo">
+        <span>IMDb</span>
+      </div>
+      <div id="menu">
+        <img src="./assest/px1menu.png" />
+        <span>Menu</span>
+      </div>
+      <!-- serch box and and search button  -->
+
+      <div id="search-box">
+        <button id="category">All</button>
+        <input
+          id="search"
+          type="text"
+          placeholder="Search Movie.."
+          name="search"
+        />
+        <button id="search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </button>
+      </div>
+      <div class="nav-right">
+        <i class="fa-solid fa-bookmark fa-lg" style="color: #f7f7f7"></i>
+        <span>Watchlist</span></a>
+  
+      </div>
+      <div id="signup">
+        <span>Login</span>
+      </div>
+    </nav>
+    <!-- main section here -->
+<div id="outer">
+    <main id="main-section">
+      <!-- movies banner  container-->
+      <div id="Suggestions-container" class="d-flex">
+        <p id="empty-search-text" class="text-muted fs-1 pt-5 ms-4">
+          waiting for your input.....
+        </p>
+
+        <div id="card-container">
+          <!-- <a href="movie_details.html" data-id = "spider-man" class="text-decoration"> -->
+          <!-- <div class="card my-2" data-id = "spider-man">
+          <img
+            src=''
+            class="card-img-top"
+            alt="..."
+            data-id = "spider-man"
+          />
+          <div class="card-body text-start">
+            <h5 class="card-title" >
+              <a href="movie.html" data-id = "spider-man"> spider-man </a>
+            </h5>
+
+            <p class="card-text">
+              <i class="fa-solid fa-star">
+                <span id="rating">&nbsp;7.8</span>
+              </i>
+
+              <button class="fav-btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+            </p>
+          </div>
+        </div> -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </main>
+
+
+
+
+       <!-- FAVORITES SECTION -->
+       <section id="favorites-section" class="animate__animated">
+        <h2>Favorites</h2>
+
+        <div id="empty-fav-text">
+          <p class="fs-5 mx-3 text-muted">
+            Click on <i class="fa-heart fa-solid text-muted"></i> icon of movies
+            to add.
+          </p>
+        </div>
+
+        <div id="fav-movies-container" class=".flex-column mx-auto">
+          <!-- <div
+            class="fav-movie-card d-flex justify-content-between align-content-center my-2"
+          >
+            <img
+              src=""
+              alt=""
+              class="fav-movie-poster"
+            />
+            <div class="movie-card-details">
+              <p class="movie-name mt-3 mb-0">
+                spider-man: No way home 
+              </p>
+              <small class="text-muted">2018</small>
+            </div>
+
+            
+
+            <div class="delete-btn">
+              <i class="fa-solid fa-trash-can" data-id="spider-man"></i>
+            </div>
+
+          </div> -->
+        </div>
+      </section>
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

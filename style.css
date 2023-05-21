@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* navbar and header part of the website logo and menu  */
+#navbar{
+    width: 100%;
+    height: 9vh;
+    background-color:rgb(22, 21, 21);
+    display: flex;
+
+}
+/* logo design with the help of css of navbar  */
+#logo{
+    display:block;
+    height: 65%;
+    width: 6%;
+    margin-left: 5%;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: rgb(240, 224, 11);
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    
+}
+#logo span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px; 
+}
+#menu{
+    display: inline-flex;
+    margin-left: 1%;
+    text-align: center;
+    justify-content: center;
+    height: 65%;
+    width: 8%;
+    margin-top: 8px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+#menu:hover{
+    background-color: rgb(80, 76, 76);
+    border-radius: 4px;
+}
+#menu span{
+    color:white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-left: 4px;
+    padding-top: 9px;
+    
+}
+
+/* search box  */
+#search-box{
+    display: flex;
+    justify-content: center;
+    width: 47%;
+    margin-left: 10px;
+    height: 65%;
+    text-align: center;
+    margin-top: 8px;
+    background-color:#fff;
+    border-radius: 10px;
+  
+}
+#search{
+    width: 80%;
+    border: none;
+    border-left:1px solid rgb(109, 106, 106) ;
+    outline: none;
+   padding-left: 15px;
+}
+
+#category{
+    width: 10%;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    
+}
+#search-btn{
+    width: 10%;
+    background-color: #fff;
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+/* right side navbar watch list etc  */
+.nav-right{
+    display: inline-flex;
+    margin-left: 1%;
+    text-align: center;
+    height: 65%;
+    width: 9%;
+    margin-top: 8px;
+    text-align: center;
+    cursor: pointer; 
+    /* background-color: red; */
+    align-items: center;
+}
+.nav-right i{
+    padding: 16px;
+    padding-right: 7px;
+}
+.nav-right span{
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+   
+}
+.nav-right:hover{
+    background-color: rgb(80, 76, 76);
+    border-radius: 4px;
+   
+  
+}
+.nav-right a{
+  text-decoration: none;
+}
+.nav-right a:hover{
+  text-decoration: underline 2px blue;
+}
+/* signup design  */
+#signup{
+  display: inline-flex;
+    margin-left: 1%;
+    text-align: center;
+    height: 65%;
+    width: 8%;
+    margin-top: 8px;
+    cursor: pointer; 
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 219, 58);
+    border-radius: 4px;
+}
+#signup span{
+  color: black; 
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+
+
+
+
+/* main section  */
+#main-section {
+  display: flex;
+  width: 70%;
+  min-height: 89vh;
+  background-color: rgb(51, 47, 47);
+  justify-content: center;
+  }
+  h2 {
+    padding-left: 0.5rem;
+    margin: 2% 4%;
+    color: var(--logo-color);
+  }
+  
+  #Suggestions-container {
+    min-height: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  
+  /* card  */
+  
+  a {
+    box-sizing: border-box;
+  }
+  
+  #card-container {
+    width: inherit;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;  
+  }
+  
+  .card {
+    
+    border: transparent;
+    width: 14rem;
+    min-height: 27.5rem;
+   
+  }
+  
+  .card > img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .card-body{
+    background-color: rgb(15, 14, 14);
+  }
+  
+  .card-title {
+    font-size: medium;
+    font-weight: 500;
+  }
+  
+  .card-title a {
+    text-decoration: none;
+    color:#fff;
+  }
+  
+  .card-title a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .fa-star {
+    color: gold;
+  }
+  
+  .text-decoration {
+    text-decoration: none;
+  }
+  
+  #rating {
+    color:#fff;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  
+  .fav-btn {
+    border: transparent;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .fa-heart {
+    color: #fff;
+  }
+  
+  .fa-heart:hover {
+    color: red;
+  }
+
+
+
+
+  /* favorite section css  */
+
+  #favorites-section {
+    width: 430px;
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    background-color: rgb(88, 83, 83);
+   
+  }
+  
+  #empty-fav-text {
+    margin-top: 40%;
+    margin-left: 15%;
+  }
+  
+  #fav-movies-container {
+    overflow-y: scroll;
+    width: 90%;
+    height: 90%;
+  }
+  
+  /* Scrollbar customisation */
+  
+  #fav-movies-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  #fav-movies-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  #fav-movies-container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+  }
+  
+  .fav-movie-card {
+    padding-right: 1rem;
+    width: 95%;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .fav-movie-poster {
+    width: 100px;
+    height: 100px;
+
+  }
+  
+  .fav-movie-name {
+    text-decoration: none;
+    color: white;
+  }
+  
+    .fav-movie-name:hover {
+      color: white;
+    text-decoration: underline;
+  }
+  
+  .movie-card-details {
+    width: 50%;
+  }
+  
+  .delete-btn {
+    cursor: pointer;
+  }
+  
+  .fa-trash-can {
+    color:white;
+    font-size: 1.3rem;
+  }
+  
+  .fa-trash-can:hover {
+    color: red;
+  }
+  #outer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+  
+
+
